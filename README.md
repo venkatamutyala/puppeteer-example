@@ -15,3 +15,13 @@ npm run test
 ```
 
 
+## Build container:
+```
+docker build .
+```
+
+
+## Run docker image:
+```
+docker run <<image id>>
+```
