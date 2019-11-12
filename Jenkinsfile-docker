@@ -1,0 +1,14 @@
+#!groovy?
+
+properties([[$class: 'BuildDiscarderProperty', strategy: [$class: 'LogRotator', numToKeepStr: '5']], disableConcurrentBuilds(), pipelineTriggers([pollSCM('* * * * *')])])
+
+
+@Library('pipeline-utils@7.0.0') _
+node('docker') 
+{
+ 
+
+ def job_config = ["job_type" : "build_image"]
+
+	build_and_deploy(job_config)
+}

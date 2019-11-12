@@ -1,0 +1,21 @@
+{
+  "name": "snappy-e2e-tests",
+  "version": "1.0.0",
+  "description": "automated testing with puppeteer",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha --timeout=120000 ./tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/magicmemories/snappy-e2e-tests.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/magicmemories/snappy-e2e-tests#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
+    "puppeteer": "^1.18.1"
+  }
+}
